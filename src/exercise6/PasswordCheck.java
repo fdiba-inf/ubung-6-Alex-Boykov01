@@ -10,7 +10,7 @@ public class PasswordCheck
         System.out.print("Enter password: ");
         String password = input.next();
         int l = password.length();
-        assert l >= 8 : "Password too short!";
+        //assert l >= 8 : "Password too short!";
         boolean letterAndNumber = false;
         int counter = 0;
         String[] strArray = password.split("");
@@ -25,7 +25,7 @@ public class PasswordCheck
                 counter++;
             }
         }
-        if (letterAndNumber = true && counter >= 2)
+        if (letterAndNumber = true && counter >= 2 && l >= 8)
         {
             System.out.println("Password valid!");
         }
